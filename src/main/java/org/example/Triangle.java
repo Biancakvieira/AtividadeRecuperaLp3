@@ -1,14 +1,14 @@
 package org.example;
 
-public class IsoscelesTriangle implements Form{
-    private double base;
-    private double height;
-    public IsoscelesTriangle(double base, double height){
+public class Triangle implements Form{
+    private final double base;
+    private final double height;
+    public Triangle(double base, double height){
         this.base = base;
         this.height = height;
     }
     @Override
-    public double calcularArea() {
+    public double calculateArea() {
         return (base * height) / 2;
     }
     @Override
