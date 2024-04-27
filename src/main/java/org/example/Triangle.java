@@ -13,7 +13,6 @@ public class Triangle implements Form{
     }
     @Override
     public double calculatePerimeter(){
-        double side = Math.sqrt(base * base + height * height);
-        return base + 2 * side;
+        return base * 3 ;
     }
 }

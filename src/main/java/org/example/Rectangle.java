@@ -1,21 +1,21 @@
 package org.example;
 
 public class Rectangle implements Form{
-    private final double lenght;
+    private final double height;
     private final double wight;
 
-    public Rectangle(double lenght, double wight) {
-        this.lenght = lenght;
+    public Rectangle(double height, double wight) {
+        this.height = height;
         this.wight = wight;
     }
 
     @Override
     public double calculateArea() {
-        return lenght * wight;
+        return height * wight;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 2 * (lenght + wight);
+        return 2 * (height + wight);
     }
 }
